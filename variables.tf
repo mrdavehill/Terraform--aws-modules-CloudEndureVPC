@@ -29,6 +29,7 @@ variable "az" {
     description = "The single availability zone"
 }
 
+#Any additional on prem subnets will need additional sections in the Private NACL, Private Route Table and EC2 Security Group
 variable "on_prem_net" {
   type        = string
   description = "On-prem server Vlan"
