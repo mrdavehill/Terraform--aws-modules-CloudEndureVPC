@@ -31,7 +31,7 @@ variable "az" {
 
 #Any additional on prem subnets will need additional sections in the Private NACL, Private Route Table and EC2 Security Group
 variable "on_prem_net" {
-  type        = string
+  type        = list
   description = "On-prem server Vlan"
 }
 
