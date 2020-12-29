@@ -1,12 +1,12 @@
-
+/*
 
 # VPC
 output "vpc_id" {
   description = "The ID of the VPC"
-  value       = aws_vpc.vpc.•.id
+  value       = aws_vpc.vpc.id
 }
 
-/*
+
 # CIDR blocks
 output "cidr_block" {
   description = "The CIDR block of the VPC"
