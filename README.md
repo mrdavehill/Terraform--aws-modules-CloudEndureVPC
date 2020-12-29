@@ -1,6 +1,6 @@
 This module creates a single AZ CloudEndure VPC with private and public subnets, an IGW, NAT gateway and VGW, route tabls, NACLs and SGs.
 
-Routing is nailed down to send CloudEdnure console traffic out the IGW and on-prem traffic to the VGW
+Routing is nailed down to send CloudEndure console traffic out the IGW and on-prem traffic to the VGW
 
 The site-to-site VPN needs to be manually added to the VGW
 

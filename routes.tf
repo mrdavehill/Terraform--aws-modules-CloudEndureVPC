@@ -11,7 +11,7 @@ resource "aws_route_table" "private_rt" {
     gateway_id = aws_internet_gateway.igw.id
   }
   route {
-    cidr_block = var.on_prem_net
+    cidr_block = var.on_prem_net[*]
     gateway_id = aws_vpn_gateway.vgw.id
   }
 }

@@ -118,7 +118,7 @@ ingress {
   protocol   = "tcp"
   rule_no    = 30
   action     = "allow"
-  cidr_block = var.on_prem_net
+  cidr_block = var.on_prem_net[*]
   from_port  = 1500
   to_port    = 1500
 }
@@ -149,7 +149,7 @@ egress {
   protocol   = "tcp"
   rule_no    = 130
   action     = "allow"
-  cidr_block = var.on_prem_net
+  cidr_block = var.on_prem_net[*]
   from_port  = 1024
   to_port    = 65535
  }
